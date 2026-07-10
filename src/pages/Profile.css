@@ -1,0 +1,443 @@
+.user-profile {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.profile-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.profile-avatar {
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-name {
+  margin-bottom: 8px !important;
+  color: #262626 !important;
+  font-weight: 600;
+}
+
+.profile-email {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+.profile-address {
+  display: block;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-actions .ant-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-actions .ant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card,
+.actions-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 24px;
+}
+
+.stats-card .ant-card-head-title,
+.actions-card .ant-card-head-title {
+  font-weight: 600;
+  color: #262626;
+}
+
+.stats-content {
+  padding: 8px 0;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-item .ant-typography {
+  margin: 0;
+}
+
+.actions-card .ant-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.actions-card .ant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Form styling */
+.profile-card .ant-form {
+  margin-top: 24px;
+}
+
+.profile-card .ant-form-item-label > label {
+  font-weight: 600;
+  color: #262626;
+  font-size: 14px;
+}
+
+.profile-card .ant-input,
+.profile-card .ant-input-affix-wrapper {
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  padding: 12px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.profile-card .ant-input:hover,
+.profile-card .ant-input-affix-wrapper:hover {
+  border-color: #40a9ff;
+}
+
+.profile-card .ant-input:focus,
+.profile-card .ant-input-affix-wrapper-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
+}
+
+.profile-card .ant-input-prefix {
+  color: #8c8c8c;
+  margin-right: 12px;
+}
+
+.profile-card .ant-input::placeholder {
+  color: #bfbfbf;
+}
+
+.profile-card .ant-input-affix-wrapper .ant-input {
+  border: none;
+  padding: 0;
+}
+
+.profile-card .ant-input-affix-wrapper .ant-input:focus {
+  box-shadow: none;
+}
+
+/* Disabled form state */
+.profile-card .ant-form-item-disabled .ant-input,
+.profile-card .ant-form-item-disabled .ant-input-affix-wrapper {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+  color: #8c8c8c;
+}
+
+.profile-card .ant-form-item-disabled .ant-input-prefix {
+  color: #bfbfbf;
+}
+
+/* Form validation styling */
+.profile-card .ant-form-item-has-error .ant-input,
+.profile-card .ant-form-item-has-error .ant-input-affix-wrapper {
+  border-color: #ff4d4f;
+}
+
+.profile-card .ant-form-item-has-error .ant-input:focus,
+.profile-card .ant-form-item-has-error .ant-input-affix-wrapper-focused {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 3px rgba(255, 77, 79, 0.1);
+}
+
+.profile-card .ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Success state */
+.profile-card .ant-form-item-has-success .ant-input,
+.profile-card .ant-form-item-has-success .ant-input-affix-wrapper {
+  border-color: #52c41a;
+}
+
+.profile-card .ant-form-item-has-success .ant-input:focus,
+.profile-card .ant-form-item-has-success .ant-input-affix-wrapper-focused {
+  border-color: #52c41a;
+  box-shadow: 0 0 0 3px rgba(82, 196, 26, 0.1);
+}
+
+/* Delete Modal Styling */
+.delete-modal-content {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.warning-icon {
+  margin-bottom: 24px;
+}
+
+.warning-title {
+  color: #262626 !important;
+  margin-bottom: 16px !important;
+  font-weight: 600;
+}
+
+.warning-description {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #8c8c8c;
+}
+
+.warning-details {
+  text-align: left;
+  margin-bottom: 32px;
+  padding: 16px;
+  background: #fff7e6;
+  border-radius: 8px;
+  border: 1px solid #ffd591;
+}
+
+.warning-details ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.warning-details li {
+  margin-bottom: 4px;
+  color: #8c8c8c;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .user-profile {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-profile {
+    padding: 12px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .profile-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .profile-actions .ant-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .stats-card,
+  .actions-card {
+    margin-bottom: 16px;
+  }
+  
+  .stat-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .actions-card .ant-btn {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-profile {
+    padding: 8px;
+  }
+  
+  .profile-card {
+    border-radius: 8px;
+  }
+  
+  .profile-header {
+    margin-bottom: 16px;
+  }
+  
+  .profile-info {
+    gap: 12px;
+  }
+  
+  .profile-avatar {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .profile-name {
+    font-size: 20px !important;
+  }
+  
+  .profile-email,
+  .profile-address {
+    font-size: 14px;
+  }
+  
+  .profile-actions {
+    gap: 8px;
+  }
+  
+  .profile-actions .ant-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    min-width: 100px;
+  }
+  
+  .profile-card .ant-form {
+    margin-top: 16px;
+  }
+  
+  .profile-card .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .profile-card .ant-input,
+  .profile-card .ant-input-affix-wrapper {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .stats-card,
+  .actions-card {
+    border-radius: 8px;
+  }
+  
+  .stat-item {
+    padding: 8px 0;
+  }
+  
+  .delete-modal-content {
+    padding: 16px 0;
+  }
+  
+  .warning-icon .anticon {
+    font-size: 36px !important;
+  }
+  
+  .warning-title {
+    font-size: 18px !important;
+  }
+  
+  .warning-description {
+    font-size: 14px;
+  }
+  
+  .warning-details {
+    padding: 12px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Loading state */
+.user-profile .ant-btn-loading {
+  opacity: 0.8;
+}
+
+.user-profile .ant-btn-loading .ant-btn-loading-icon {
+  margin-right: 8px;
+}
+
+/* Animation for edit mode */
+.profile-card .ant-form-item {
+  transition: all 0.3s ease;
+}
+
+.profile-card .ant-form-item-disabled {
+  opacity: 0.7;
+}
+
+/* Custom scrollbar */
+.user-profile {
+  scrollbar-width: thin;
+  scrollbar-color: #1890ff #f0f0f0;
+}
+
+.user-profile::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-profile::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.user-profile::-webkit-scrollbar-thumb {
+  background: #1890ff;
+  border-radius: 3px;
+}
+
+.user-profile::-webkit-scrollbar-thumb:hover {
+  background: #40a9ff;
+}
+
+/* Row and Col responsive adjustments */
+@media (max-width: 576px) {
+  .profile-card .ant-row {
+    margin: 0 !important;
+  }
+  
+  .profile-card .ant-col {
+    padding: 0 !important;
+  }
+  
+  .profile-card .ant-col:first-child {
+    margin-bottom: 16px;
+  }
+}

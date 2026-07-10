@@ -1,0 +1,386 @@
+.seller-profile {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.profile-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-avatar {
+  border: 3px solid #1890ff;
+  box-shadow: 0 4px 8px rgba(24, 144, 255, 0.2);
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  margin: 0 !important;
+  color: #262626;
+  font-weight: 600;
+}
+
+.profile-reg {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+}
+
+.stats-card,
+.actions-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 16px;
+}
+
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+/* Form styling */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input {
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  padding: 12px 16px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.ant-input:hover,
+.ant-input-affix-wrapper:hover {
+  border-color: #40a9ff;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
+}
+
+.ant-input-prefix {
+  color: #8c8c8c;
+  margin-right: 12px;
+}
+
+.ant-input::placeholder {
+  color: #bfbfbf;
+}
+
+.ant-input-affix-wrapper .ant-input {
+  border: none;
+  padding: 0;
+}
+
+.ant-input-affix-wrapper .ant-input:focus {
+  box-shadow: none;
+}
+
+/* Disabled form styling */
+.ant-form-item-disabled .ant-input,
+.ant-form-item-disabled .ant-input-affix-wrapper {
+  background: #f5f5f5;
+  border-color: #d9d9d9;
+  color: #8c8c8c;
+}
+
+/* Button styling */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, #1890ff 0%, #40a9ff 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.ant-btn-dangerous {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-dangerous:hover {
+  background: #ff7875;
+  border-color: #ff7875;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 77, 79, 0.3);
+}
+
+/* Modal styling */
+.delete-modal-content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.warning-icon {
+  margin-bottom: 20px;
+}
+
+.warning-title {
+  color: #262626 !important;
+  margin-bottom: 12px !important;
+  font-weight: 600;
+}
+
+.warning-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.warning-details {
+  text-align: left;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.warning-details ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.warning-details li {
+  color: #ff4d4f;
+  margin-bottom: 4px;
+}
+
+/* Form validation styling */
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input-affix-wrapper {
+  border-color: #ff4d4f;
+}
+
+.ant-form-item-has-error .ant-input:focus,
+.ant-form-item-has-error .ant-input-affix-wrapper-focused {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 3px rgba(255, 77, 79, 0.1);
+}
+
+.ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Success state */
+.ant-form-item-has-success .ant-input,
+.ant-form-item-has-success .ant-input-affix-wrapper {
+  border-color: #52c41a;
+}
+
+.ant-form-item-has-success .ant-input:focus,
+.ant-form-item-has-success .ant-input-affix-wrapper-focused {
+  border-color: #52c41a;
+  box-shadow: 0 0 0 3px rgba(82, 196, 26, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .seller-profile {
+    padding: 16px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .profile-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .profile-actions .ant-space {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .stats-card,
+  .actions-card {
+    margin-bottom: 12px;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .seller-profile {
+    padding: 12px;
+  }
+  
+  .profile-card {
+    margin: 0 -12px;
+    border-radius: 0;
+  }
+  
+  .profile-header {
+    padding: 0 12px;
+  }
+  
+  .profile-avatar {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .profile-name {
+    font-size: 18px !important;
+  }
+  
+  .profile-actions .ant-space {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .profile-actions .ant-btn {
+    width: 100%;
+  }
+  
+  .ant-modal {
+    margin: 0;
+    max-width: 100vw;
+  }
+  
+  .ant-modal-body {
+    padding: 16px;
+  }
+  
+  .delete-modal-content {
+    padding: 10px 0;
+  }
+  
+  .warning-icon .anticon {
+    font-size: 36px !important;
+  }
+  
+  .warning-title {
+    font-size: 16px !important;
+  }
+  
+  .warning-description {
+    font-size: 14px;
+  }
+}
+
+/* Loading state */
+.ant-spin-container {
+  min-height: 200px;
+}
+
+/* Card hover effects */
+.profile-card:hover,
+.stats-card:hover,
+.actions-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Animation for form fields */
+.ant-form-item {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+.ant-input {
+  scrollbar-width: thin;
+  scrollbar-color: #1890ff #f0f0f0;
+}
+
+.ant-input::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-input::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+.ant-input::-webkit-scrollbar-thumb {
+  background: #1890ff;
+  border-radius: 3px;
+}
+
+.ant-input::-webkit-scrollbar-thumb:hover {
+  background: #40a9ff;
+}
